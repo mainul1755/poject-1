@@ -1,0 +1,602 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+  background: #0D0D0D;
+  color: #ddd;
+
+}
+a{
+    text-decoration: none;
+}
+button{
+  border: none;
+  cursor: pointer;
+}
+
+ul, ol, li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/*nav*/
+
+nav{
+    padding: 15px 0;
+    background: black;
+}
+
+.main_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.main_menu .logo{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 150px;
+}
+#menu ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 35px;
+      text-decoration: none;   
+      
+    }
+    #menu ul li a {
+      display: inline-block;
+      padding: 8px 20px;
+      border-radius: 10px;
+      background:transparent;
+      color: #fff;
+      font-size:18px;
+      font-weight:700;
+      line-height: 1.5;
+      border-bottom: 3px solid transparent;
+      transition: all linear 1s;
+    }
+    #menu ul li a:hover{
+      color: red;
+      border-bottom:2px solid tomato;
+       
+    }
+     
+
+.main_menu .logo img{
+    height: 100%;
+}
+
+.main_menu .buttons {
+    border: none;
+    background: transparent;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 20px;
+     
+}
+
+ .hero {
+      height: 100vh;
+      background: url('image/image\ \(1\).png') no-repeat center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: ;
+      padding-top: 72px;
+      padding-bottom: 246px;
+      padding-left:150px ;
+      position: relative;
+      
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 652px;
+    }
+
+    .hero-content h1 {
+      font-size: 66px;
+      font-weight: 900;
+      line-height: 1.5;
+      color: #fff;
+    }
+
+    .hero-content p {
+      margin: 20px 0;
+      color: #ddd;
+      font-size: 20px;
+      line-height: 1.5;
+      padding-top: 10px;
+      padding-bottom: 40px;
+    }
+
+    .btn {
+      background: #fff;
+      color: #000;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background: #ffcc00;
+    }
+
+
+    /*food maker*/
+    .section_heading{
+      padding-bottom: 40px;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+    .section_heading h2{
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 1.3;
+      padding-bottom: 10px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .section_heading p{
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+      text-align: center;
+      color: #fff;
+      padding-bottom: 30px;
+
+    }
+    #food_maker{
+      padding-top: 100px;
+       
+    }
+    .food_maker_container{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 87px;
+      align-items: center;
+    }
+    .food_maker_container p{
+      line-height: 30px;
+      font-size: 18px;
+      color: #fff;
+    }
+
+    .food_maker_container p a{
+      font-weight: 700;
+      color: #ddd;
+    }
+    .food_maker_container .video{
+      background: url(image/vedio.jpg) no-repeat center/cover;
+      min-height: 430px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+   
+    .food_maker_container .video .icon button{
+      width: 92px;
+      height: 92px;
+      border-radius: 50%;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+    } 
+    .container .section_heading{
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 1.3;
+      padding-top: 50px;
+      padding-bottom: 10px;
+      text-align: center;
+      color: #fff;
+    }
+    .delicious_menu{
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      padding-top: 40px;
+      padding-bottom: 80px;
+      justify-content: center;
+    }
+    .delicious_menu li{}
+    .delicious_menu li a{
+      display: inline-block;
+      padding: 8px 20px;
+      border-radius: 10px;
+      background:transparent;
+      color: #fff;
+      font-size:18px;
+      font-weight:700;
+      line-height: 1.5;
+      border-bottom: 3px solid transparent;
+      transition: all linear 1s;
+       
+    }
+
+    .delicious_menu li a:hover{
+       
+      border-bottom: 3px solid #fff;
+
+    }
+
+    .menu_items{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      background: ;
+    }
+
+    .menu_items .item{
+      padding: 50px;
+      background:#2c2b2b;
+      border-radius: 20px
+;
+    }
+    .menu_items .item .item_image{
+      height: 236px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+         
+    }
+    .menu_items .item .item_image img{
+      width: 100%;
+    }
+     .menu_items .item .item_info{
+      padding-top: 50px;
+
+     }
+     .menu_items .item .item_info .title{
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 36px;
+      color: #ddd;
+     }
+     .menu_items .item .item_info .description{
+      padding:10px 0 ;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+      color: #ddd;
+     }
+     .menu_items .item .item_info .price_and_cart{
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: center;
+     }
+     .menu_items .item_info .price_and_cart .price{
+      color:#ddd;
+      font-size: 18px;
+      font-weight: 700;
+      
+     }
+     .menu_items .item .item_info .price_and_cart .cart{
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #fff;
+      cursor: pointer ;
+     }
+
+     .see_all {
+      display: flex;
+      justify-content: center;
+      padding-top: 80px;
+     }
+     .see_all a {
+      display: inline-block;
+      padding: 20px 54px;
+      border-radius: 1000px;
+      background: #ddd;
+      color: #000;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.5;
+     }
+     .see_all a:hover {
+      background: #ffcc00;
+    }
+
+     #quality_food{
+      padding-top: 80px;
+     }
+     .quality_food{ 
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+    }
+     .quality_food .item{
+      text-align: center;
+     }
+     .quality_food .item h4{
+      font-size: 30px;
+      font-weight: 700;
+      padding-bottom: 5px;
+     }
+     .quality_food .itme p{
+      font-size: 16px;
+      line-height: 1.5;
+     }
+
+     .common_btn{
+      display:inline-block ;
+      padding: 20px 54px;
+      border-radius: 1000px;
+      background: #fff;
+      color: #000;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.5;
+     }
+     #franchise{
+      padding-top: 80px;
+       
+     }
+     .franchise_info{
+      text-align: center;
+          
+     }
+     .common_button{
+      padding-top: 50px;
+     }
+
+     .common_btn:hover {
+      background: #ffcc00;
+    }
+     /*testimonial*/
+
+     #testimonial{
+      padding-top: 80px;
+      padding-bottom: 100px;
+     }
+     .testimonial_item{
+      padding: 30px;
+      background: #191919;
+      border-radius: 16px;
+
+       
+     }
+     .testimonial_grid{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      padding-top: 30px;
+     }
+     .testimonial_item {
+       
+      
+     }
+     .testimonial_item .top .user{
+      display: grid;
+      grid-template-columns: 74px 1fr;
+      gap: 12px;
+     }
+     .testimonial_item .top .user .avater{
+      width: 74px;
+      height: 74px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+     }
+     .testimonial_item .top .user .avater img{
+      width: 100%;
+     }
+     .testimonial_item .top .quote{
+      margin: 10px;
+      position: relative;
+     }
+     .testimonial_item .top .quote::after{
+        content: "";
+        width: 195px;
+        height: 1px;
+        background:#ffff ;
+        position: absolute;
+        left: 115px;
+        top: 50%;
+        transform: translate(-50%);
+       
+     }
+
+
+     .testimonial_item .top .user .user_info{}
+     .testimonial_item .top .user .user_info h4{}
+     .testimonial_item .top .user .user_info p{}
+     .testimonial_item .top .user .user_info ul{
+      display: flex;
+      gap: 10px;
+      align-items: center;
+     }
+     .testimonial_item .top .user .user_info ul li{
+       
+       
+     }
+     .testimonial_item .top .user .user_info ul li img{
+      width: 100%;
+     }
+     .testimonial_item .bottom{
+      padding-top: 30px;
+     }
+     .testimonial_item .bottom p{
+      font-size: 16px;
+      line-height: 1.5;
+      color: #fff;
+     }
+
+     #Subscribe{
+      padding: 80px 0;
+      background: #fff;
+      color: #000;
+     }
+     .Subscribe_box{}
+     .Subscribe_box h2{
+      font-size: 70px;
+      line-height: 90px;
+      color: #000;
+      font-weight:700 ;
+      text-align: center;
+      padding-bottom: 50px;
+     }
+     .Subscribe_box form{
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 20px;
+      max-width: 748px;
+      margin: 0 auto;
+     }
+     .Subscribe_box form input{
+      border: 1px solid #000;
+      padding: 20px 30px;
+      border-radius: 1000px;
+      background: transparent;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 28px;
+      color: red;
+     }
+     .Subscribe_box form input::placeholder{
+      color:#000;
+     }
+     .Subscribe_box form button{
+      border: none;
+      padding: 28px 54px;
+      border-radius: 1000px;
+      background: #000;
+      color: #fff;
+      cursor: pointer;
+     }
+
+     #location{
+      padding: 150px 0;
+      background: #0D0D0D;
+     }
+
+     .location_container{
+      display: grid;
+      grid-template-columns: 1fr 483px;
+      gap: 145px;
+      align-items: center;
+    }
+
+     .location_container .text{}
+     .location_container .text h2{
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 1.5;
+      color: #fff;
+     }
+     .location_container .text p{
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #fff;
+      padding-top: 16px;
+      padding-bottom: 70px;
+     }
+     .location_container .text button{
+      border: none;
+      padding: 28px 54px;
+      border-radius: 1000px;
+      background:#fff;
+      color:#000;
+      cursor: pointer;
+     }
+
+     .location_container .text button:hover {
+      background: #ffcc00;
+    }
+      #footer{
+        padding: 80px 0;
+        background: #2c2b2b;
+      }
+
+      .footer_grid{
+        display: flex;
+        gap: 103px;
+        justify-content: space-between;
+        padding-bottom: 30px;
+      }
+      .footer_grid h5{
+        font-size: 25px;
+        font-weight: 700;
+        padding-bottom: 30px;
+      }
+      .footer_grid ul{
+        display: grid;
+        gap: 24px;
+        grid-template-columns: 1fr;
+      }
+
+        
+      .footer_grid ul li a {
+        font-size: 16px;
+        color: #fff;
+        font-weight: 400;
+        line-height: 1.5;
+        text-decoration: none;
+      }
+      .footer_container .copy{
+        padding-top: 35px;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        align-items: center;
+      }
+      .footer_container .copy ul {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+       
+
+
+     
+
+
+
+
+
+    
+    
+
+    
+ 
+
